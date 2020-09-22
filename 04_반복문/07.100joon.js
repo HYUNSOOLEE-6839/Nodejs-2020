@@ -52,6 +52,6 @@ for(let i = 0; i<10; i ++){
         console.log(N*i);
 } */
 
-while(true){
+/* while(true){
     console.log("무한 반복");
-}
+} */
