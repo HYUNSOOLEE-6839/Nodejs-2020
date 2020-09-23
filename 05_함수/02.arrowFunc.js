@@ -4,12 +4,16 @@ let arrowFunc = () => {
 arrowFunc();
 console.log(arrowFunc);
 
-// #1
-let power = x => { return x * x}
-console.log(power(13));
+/* // #1
+let power = x => { return x * x }
+console.log(power(13)); */
 
 // #2
 let power2 = x => x*x
-console.log(power2(12));
+let power3 = y => y*y
+let power4 = z => z*z
 
-console.log(power(10), power2(10));
+console.log(power2(215)+power3(345));
+console.log(power4(460))
+
+// #3
