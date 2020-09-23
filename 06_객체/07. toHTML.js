@@ -14,38 +14,20 @@ let html = `
         <th>가격</th>
     </tr>
     </thead>
-    <tbody>
-    <tr>
-        <td>바나나</td>
-        <td>1200</td>
-    </tr>
-    <tr>
-        <td>사과</td>
-        <td>2000</td>
-    </tr>
-    <tr>
-        <td>배</td>
-        <td>3000</td>
-    </tr>
-    <tr>
-        <td>고구마</td>
-        <td>700</td>
-    </tr>
-    <tr>
-        <td>감자</td>
-        <td>600</td>
-    </tr>
-    <tr>
-        <td>수박</td>
-        <td>5000</td>
-    </tr>
-  </tbody>
 </table>
     `;
 
-for(let products of html){
+for(let product of products){
 
+html += `
+        <tr>
+            <td>${product.name}</td>
+            <td>${product.price}</td>
+        </tr>
+    `;
 }
-html += 
+html += `
+        </table>
+    </div>
+`;
 console.log(html);
-
